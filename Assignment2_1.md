@@ -1,7 +1,7 @@
 # Assignment 2_1 - Jenkins
 
 ## Installing Blue Ocean
-- Go  `Manage Jenkins > Manage Plugins`
+- Go to `Manage Jenkins > Manage Plugins`
 - Choose the `Available` tab and search for `blue ocean`
 - Select the `Blue Ocean (BlueOcean Aggregator)` plugin. Only this plugin is recommended since all other Blue Ocean plugins will be installed automatically as dependencies.
 - Blue Ocean will be activated when Jenkins restarts.
@@ -39,8 +39,8 @@ asking for the details.
     Go [here](https://www.npmjs.com/package/ngrok) to download ngrok as a `npm package`.
     - Then do `ngrok http 8080` (coz 8080 is Jenkins port which has to be mapped to a public IP) and then you will get a public IP of the form `http://<SOMETHING>.ngrok.io` and then use this in the github webhooks.
 
-## Post Build Actions - Extended Email Notification
-Steps to setup Extended Email Notifications as a post build action have been documented below. Extended Email Notifications allow us to send customized email notifications after the build process.
+## Post Build Actions - Email Notification
+Steps to setup Email Notifications as a post build action have been documented below. Email Notifications allow us to send customized email notifications after the build process.
 
 - ### Configuring Email
     We need to first add the details of the SMTP server and the mail account so that Jenkins can send the mail.
