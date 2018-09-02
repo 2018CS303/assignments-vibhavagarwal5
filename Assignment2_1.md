@@ -25,7 +25,7 @@ asking for the details.
 - Adding Jenkins service to GitHub. Now we need to set up our GitHub repo to make a request to Jenkins webhook (Whenever a commit is made on the Github repo) so that the polling logic can be applied. 
     - Go to your GitHub repo and navigate to `Settings`.
     - Choose `Webhooks` from the submenu and click on `Add webhook` on the upper right corner.
-    - Add `http://<public-ip or URL>/github-webhook` under `Payload URL`. <br>
+    - Add `http://<public-ip or URL>/github-webhook/` under `Payload URL`. <br>
     *(Check the how to get **Public IP** as documented below)*
     - Select `Content type` as `application/json`.
     - Choose what kind of event you want github to trigger under `Which events would you like to trigger this webhook?` as `Just the push event`.
@@ -37,7 +37,7 @@ asking for the details.
     - Go to [ngrok's official site](https://ngrok.com/download) and follow the instructions to install ngrok. 
     <br>OR<br>
     Go [here](https://www.npmjs.com/package/ngrok) to download ngrok as a `npm package`.
-    - Then do `ngrok http 8080` (coz 8080 is Jenkins port which has to be mapped to a public IP) and then you will get a public IP of the form `http://<SOMETHING>.ngrok.io` and then use this in the github webhooks.
+    - Then do `ngrok http 8080` (because 8080 is Jenkins port which has to be mapped to a public IP) and then you will get a public IP of the form `http://<SOMETHING>.ngrok.io` and then use this in the github webhooks.
 
 ## Post Build Actions - Extended Email Notification
 Steps to setup Extended Email Notifications as a post build action have been documented below. Extended Email Notifications allow us to send customized email notifications after the build process.
