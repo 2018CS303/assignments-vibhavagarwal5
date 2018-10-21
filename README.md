@@ -9,3 +9,4 @@ This repository contains the each assignment that will be given as course work.
 | Assignment 2 | assignment2 |
 | Docker | docker |
 | User story | user_story |
+| Selenium | selenium |
